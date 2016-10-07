@@ -28,14 +28,9 @@ public class Course {
         this.acStart = startDate;
         this.acEnd = endDate;
     }
-    
-    public String getCourse()
+    @Override
+    public String toString()
     {
         return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd + "\n List of Modules"+ moduleL;
-    }
-    
-    @Override
-   public String toString() {
-       return getCourse();
     }
 }
