@@ -18,13 +18,13 @@ public class Module {
 * 
 */
     public String modName;
-    public ArrayList<Student> studentL;
+    public List<Student> studentL= new ArrayList();
     public String modId;
 
-    public Module(String moduleName, String moduleID, ArrayList<Student> studentList) { //creates objects//
+    public Module(String moduleName, String moduleID, List moduleStudents) { //creates objects//
         this.modName = moduleName;
         this.modId = moduleID;
-        this.studentL = studentList;
+        this.studentL = moduleStudents;
         
     }
     public String getModule()
