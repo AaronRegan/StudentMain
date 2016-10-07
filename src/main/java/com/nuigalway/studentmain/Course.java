@@ -6,6 +6,7 @@
 package com.nuigalway.studentmain;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.joda.time.DateTime;
 
@@ -31,6 +32,7 @@ public class Course {
     
     public String getCourse()
     {
+        System.out.println(Arrays.toString(moduleL.toArray()));
         return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd + "\n List of Modules"+ moduleL;
     }
 }
