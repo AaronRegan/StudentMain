@@ -30,12 +30,12 @@ public class Student {
        
     public String getStudentCourse()
     {
-        return "\n"+name +id+ course ;
+        return "\n"+name +" "+ id +" "+ course ;
     }
     
     public String getUsername()
     {
-        return "\n"+name + age;
+        return name + age;
     }
 
 }
