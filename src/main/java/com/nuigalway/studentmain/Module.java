@@ -34,6 +34,6 @@ public class Module {
         {
             prntStud = studentL.get(i).getUsername() + "\n "+prntStud;
         }
-        return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
+        return "\nModule Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+prntStud;
     }
 }
