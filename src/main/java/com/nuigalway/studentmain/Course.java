@@ -30,6 +30,6 @@ public class Course {
     }
     public String getCourse()
     {
-        return "Course Name:"+ corName +"/n StartDate:"+ acStart + "/n End Date:"+acEnd + "/n List of Modules"+ moduleL;
+        return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd + "\n List of Modules"+ moduleL;
     }
 }

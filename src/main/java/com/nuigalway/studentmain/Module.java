@@ -29,6 +29,6 @@ public class Module {
     
     public String getModule()
     {
-        return "Module Name:"+ modName +"/n Module ID:"+ modId + "/n List of Students:"+studentL;
+        return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
     }
 }
