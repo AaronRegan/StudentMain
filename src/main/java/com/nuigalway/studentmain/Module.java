@@ -18,22 +18,17 @@ public class Module {
 * 
 */
     public String modName;
-    public List<Student> studentL= new ArrayList();
+    public ArrayList<Student> studentL;
     public String modId;
 
-    public void setModule(String moduleName, String moduleID, List moduleStudents) { //creates objects//
+    public Module(String moduleName, String moduleID, ArrayList<Student> studentList) { //creates objects//
         this.modName = moduleName;
         this.modId = moduleID;
-        this.studentL = moduleStudents;  
+        this.studentL = studentList;
+        
     }
-    
     public String getModule()
     {
-        return "Module Name:"+ modName +"\n Module ID:"+ modId;
-    }
-    @Override
-    public String toString()
-    {
-        return "\n List of Students:"+studentL;
+        return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
     }
 }
