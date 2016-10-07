@@ -22,15 +22,21 @@ public class Course {
     DateTime acStart;
     DateTime acEnd;
 
-    public Course(String courseName, List moduleList, DateTime startDate, DateTime endDate) { //creates objects//
+    public void setCourse(String courseName, List moduleList, DateTime startDate, DateTime endDate) { //creates objects//
         this.corName = courseName;
         this.moduleL = moduleList;
         this.acStart = startDate;
         this.acEnd = endDate;
     }
+    
+    public String getCourse()
+    {
+        return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd;
+    }
     @Override
     public String toString()
     {
-        return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd + "\n List of Modules"+ moduleL;
+       return  "\n List of Modules"+ moduleL;
     }
 }
+

@@ -5,6 +5,7 @@
  */
 package com.nuigalway.studentmain;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,19 +17,23 @@ public class Module {
     /**
 * 
 */
-    String modName;
-    List<Student> studentL= new ArrayList();
-    String modId;
+    public String modName;
+    public List<Student> studentL= new ArrayList();
+    public String modId;
 
-    public Module(String moduleName, String moduleID, List moduleStudents) { //creates objects//
+    public void setModule(String moduleName, String moduleID, List moduleStudents) { //creates objects//
         this.modName = moduleName;
         this.modId = moduleID;
-        this.studentL = moduleStudents;
-        
+        this.studentL = moduleStudents;  
+    }
+    
+    public String getModule()
+    {
+        return "Module Name:"+ modName +"\n Module ID:"+ modId;
     }
     @Override
     public String toString()
     {
-        return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
+        return "\n List of Students:"+studentL;
     }
 }
