@@ -29,6 +29,11 @@ public class Module {
     }
     public String getModule()
     {
+        String prntStud = " ";
+        for(int i=0; i <studentL.size(); i++)
+        {
+            prntStud = studentL.get(i).getUsername() + "\n "+prntStud;
+        }
         return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
     }
 }

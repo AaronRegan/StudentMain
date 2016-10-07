@@ -37,7 +37,6 @@ public class Course {
         {
             prntMods = moduleL.get(i).getModule() + "\n "+prntMods;
         }
-        System.out.println(Arrays.toString(moduleL.toArray()));
         return "Course Name:"+ corName +"\n StartDate:"+ acStart + "\n End Date:"+acEnd + "\n List of Modules"+ prntMods;
     }
 }
