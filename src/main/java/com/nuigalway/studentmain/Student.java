@@ -28,9 +28,14 @@ public class Student {
         
     }
        
+    public String getStudentCourse()
+    {
+        return "\n"+name +id+ course ;
+    }
+    
     public String getUsername()
     {
-        return name + age;
+        return "\n"+name + age;
     }
 
 }
