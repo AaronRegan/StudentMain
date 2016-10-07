@@ -26,9 +26,12 @@ public class Module {
         this.studentL = moduleStudents;
         
     }
-    
     public String getModule()
     {
         return "Module Name:"+ modName +"\n Module ID:"+ modId + "\n List of Students:"+studentL;
     }
+    @Override
+   public String toString() {
+       return getModule();
+   }
 }
