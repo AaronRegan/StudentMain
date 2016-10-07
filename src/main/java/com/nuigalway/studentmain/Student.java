@@ -9,17 +9,17 @@ package com.nuigalway.studentmain;
  *
  * @author Aaron
  */
-class Student {
+public class Student {
     /**
 * 
 */
-    String name;
-    String course;
-    String id;
-    String age;
-    String DOB;
+    public String name;
+    public String course;
+    public String id;
+    public String age;
+    public String DOB;
 
-    Student(String Sname, String idno, String cCode, String Sage, String SDOB) { //creates objects//
+    public Student(String Sname, String idno, String cCode, String Sage, String SDOB) { //creates objects//
         this.name = Sname;
         this.id = idno;
         this.course = cCode;

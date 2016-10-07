@@ -20,7 +20,7 @@ public class Module {
     List<Student> studentL= new ArrayList();
     String modId;
 
-    Module(String moduleName, String moduleID, List moduleStudents) { //creates objects//
+    public Module(String moduleName, String moduleID, List moduleStudents) { //creates objects//
         this.modName = moduleName;
         this.modId = moduleID;
         this.studentL = moduleStudents;
